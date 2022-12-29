@@ -1,0 +1,12 @@
+/* import base.css */
+@import url("./base.css");
+
+
+/* html and body Style */
+*{
+    margin: 0%;
+    padding: 0%;
+    direction: rtl;
+    box-sizing: border-box;
+}
+/* html and body style */
