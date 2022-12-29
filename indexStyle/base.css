@@ -1,0 +1,30 @@
+/* set color and font  */
+/* base style */
+
+:root{
+    --fontHeaderColor:#FFFFFF;
+    --menuBarFontColor : #555555;
+    --headerParaSize :50px;
+    --headerFontSize:120px;
+    --hederColor:#000000;
+    --paragraphSize:30px;
+    --paraColor:#D9D9D9;
+    --internetbackGroundColor:linear-gradient(180deg, #2C74B3 48.44%, #0A2647 100%);transform: rotate(-90deg);
+    --baseBackGroundcolor:#0A2647;
+    --worldFrontSection:linear-gradient(180deg, #0A2647 10.18%, #273B4A 100%);
+    --circleBackground:linear-gradient(180deg, #0A2647 10.18%, #273B4A 100%);
+    --circleShadow :#0A2647;filter: blur(6.24041px);
+    --sliderSectionBackGround: linear-gradient(180deg, #0A2647 0%, #222222 100%);
+    --cardparaSize:25px;
+    --cardheaderSize:60px;
+    --textFontWeight:400px;
+    --cardparagraphSize:30px;
+    --tableBackGroundColor: rgba(10, 38, 71, 0.26);
+    --footerHeadingSize:30px;
+    --footerParaghraph:25px;
+}
+
+
+
+/* base style */
+/* set color and font  */
