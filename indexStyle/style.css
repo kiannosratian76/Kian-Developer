@@ -39,7 +39,6 @@ body , html{
 
 /* navbar */
 #Home-section nav{
-    border: 1px solid red ;
     width: 100%;
     cursor: pointer;
     z-index: 9999;
@@ -77,23 +76,33 @@ body , html{
 }
 #Home-section nav  .btn-text-togle{
     color: var(--font-HeaderColor);
-    font-size:var(--cardpara-Size);    
+    font-size: 1rem;    
+    border: none;
+    padding: 0.5rem 0.5rem;
 }
 #Home-section nav .navbar-togle-btn{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     align-items: center;
+    border: none;
+    box-sizing: border-box;
+    padding: 0%;
 }
 #Home-section nav .navbar-togle-btn .bar{
     border: 2px solid #ffffff;
+    background-color: #ffffff;
     border-radius: 0.2rem;
     width: 40%;
+    margin-top: 0.5rem;
+    transition: all 0.2s ease-in;
 }
 
 
-
+.menuColBox{
+    border: 1px solid red ;
+}
 
 /* navbar */
 
