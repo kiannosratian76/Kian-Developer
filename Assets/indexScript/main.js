@@ -1,4 +1,3 @@
-import CreateItems from "./ComponentMenu/menuObject";
 /////////section Home
 //////Work on navbar
 //// navbar togle button and transform
@@ -7,27 +6,34 @@ const barTogleElement = document.querySelectorAll(".bar");
 console.log(barTogleElement);
 const parentbarElement = document.querySelector(".navbar-togle-btn");
 console.log(typeof parentbarElement);
+//get bar element
+var barOne = parentbarElement.childNodes[1];
+var barTow = parentbarElement.childNodes[3];
+var barTree = parentbarElement.childNodes[5];
+///menu-bar-Container
+const menuContainer = document.getElementById("menu-bar-container");
+//menu-bar-items
+const menuItems = document.querySelectorAll(".menu-bar-items");
 ///get event for transform childeren
-parentbarElement.addEventListener("click", (event) => {
-    // select child element
-    console.log(event);
-    if (event.type == "click") {
-        var barOne = parentbarElement.childNodes[1];
-        var barTow = parentbarElement.childNodes[3];
-        var barTree = parentbarElement.childNodes[5];
+// menuContainer.style.width = menuContainer.clientWidth - 830 + "px";
+
+parentbarElement.addEventListener("click", () => {
+    // check client width menu bar
+    if (menuContainer.clientWidth < 830) {
+        menuContainer.style.width = 830 + "px";
         barTow.style.display = "none";
         barOne.style.transform = "rotate(45deg)";
         barTree.style.transform = "rotate(-45deg)";
+        menuItems.forEach((item) => {
+            item.style.display = "flex";
+        });
     } else {
-        console.log("false");
+        menuContainer.style.width = menuContainer.clientWidth - 830 + "px";
+        menuItems.forEach((item) => {
+            item.style.display = "none";
+        });
+        barTow.style.display = "flex";
+        barOne.style.transform = "rotate(0)";
+        barTree.style.transform = "rotate(0)";
     }
 });
-// set items for menu
-// set menu objec class
-const menu = new CreateItems().createItemsMenu();
-const menuColBox = document.createElement("div");
-menuColBox.appendChild(menu);
-menuColBox.className = "col-12";
-menuColBox.classList.add("menuColBox");
-const homeSection = document.getElementById("Home-section");
-homeSection.appendChild(menuColBox);
