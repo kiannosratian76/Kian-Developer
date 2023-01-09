@@ -11,49 +11,43 @@
 }
 body , html{
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    margin:0 ;
+    padding: 0%;
 }
 /* html and body style */
 /* homeSection */
 
 #Home-section{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /* background-image: url("../Assets/Images/beautiful-milky-way-night-sky.jpg");  */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:local; 
-}
-.backgroundImage{
     border: none;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    background-color: #0A2647;
-    opacity: 0.7;
+    background: #0A2647;
+    position: fixed;
+    margin: 0%;
+    overflow: scroll;
+    overflow-x: hidden;
 }
-
 
 /* navbar */
 #Home-section nav{
     cursor: pointer;
-    z-index: 9999;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin:  auto;
-    
 }
 
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
 #Home-section nav .navbar-brand{
     border: none;
     cursor: pointer;
     position: relative;
     color: var(--font-HeaderColor);
     font-size: 2rem;
+    text-align: left;
 }
 
 
@@ -65,7 +59,7 @@ body , html{
     text-align: center;
     align-items: center;
     position: relative;
-    height: 3em;
+    height: 2.5em;
     border-radius: 0.5rem;
     justify-content: center;
     background-color: #ffffff;
@@ -80,16 +74,19 @@ body , html{
     font-size: 1rem;    
     border: none;
     padding: 0.5rem 0.5rem;
+    margin: 0.2rem auto;
+    position: relative;
+    text-decoration: none;
 }
 #Home-section nav .navbar-togle-btn{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    border: none;
+    justify-content: flex-start;
+    text-align: right;
+    align-items: flex-start;
     box-sizing: border-box;
-    padding: 0%;
+    padding-right: 3%;
+    
 }
 #Home-section nav .navbar-togle-btn .bar{
     border: 2px solid #ffffff;
@@ -102,22 +99,28 @@ body , html{
 
 
 /* menu bar-style */
+.parentMenuBar{
+    display: flex;
+    text-align: right;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
 .menu-bar{
     border: none ;
     width: 0;
     background-color: #ffffff;
     cursor: pointer;
-    z-index: 1;
     align-items: center;
     text-align: center;
     display: flex;
     border-radius: 10px;
     height: 3rem;
     position: relative;
-    right: 175px;
-    margin-top: 3rem;
     overflow: hidden;
     transition: all 0.3s ease;
+    margin-right: 1rem;
 }
 
 .menu-bar-nav{
@@ -159,12 +162,62 @@ box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
     font-size: 1rem;
     font-weight: 400;
 }
-
-
 /* End menu */
+.text-heading{
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+/* card-Container */
+#card-Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    margin:auto;
+}
+
+.image-heading-items{
+    border: none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.image-heading-items img{
+    border-radius: 1vh;
+}
+
+.card-image{
+    cursor: pointer;
+}
+
+
+
+
+/* card-Container */
+
+
+
+
+
+
+
+
+
 
 
 /* navbar */
+
+
+
+
+
+
+
+
 
 
 

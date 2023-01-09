@@ -20,7 +20,7 @@ const menuItems = document.querySelectorAll(".menu-bar-items");
 parentbarElement.addEventListener("click", () => {
     // check client width menu bar
     if (menuContainer.clientWidth < 830) {
-        menuContainer.style.width = 830 + "px";
+        menuContainer.style.width = 98 + "%";
         barTow.style.display = "none";
         barOne.style.transform = "rotate(45deg)";
         barTree.style.transform = "rotate(-45deg)";
@@ -28,10 +28,11 @@ parentbarElement.addEventListener("click", () => {
             item.style.display = "flex";
         });
     } else {
-        menuContainer.style.width = menuContainer.clientWidth - 830 + "px";
+        menuContainer.style.width = 5 + "%";
         menuItems.forEach((item) => {
             item.style.display = "none";
         });
+        console.log("ssss");
         barTow.style.display = "flex";
         barOne.style.transform = "rotate(0)";
         barTree.style.transform = "rotate(0)";
