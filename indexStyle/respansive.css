@@ -34,3 +34,42 @@
     }
 }
 /* navbar Respansive Design style */
+/* text-heading respansive style */
+@media screen and (max-width:400px) {
+    .text-heading .text-header{
+            font-size: large;
+    }
+}
+/* text-heading respansive style */
+
+@media screen and (max-width:300px){
+    #Home-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        align-items: right;
+        justify-content: right;
+    }
+    nav{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        align-items:center;
+        justify-content: center;
+        direction: rtl;
+    }
+    #content{
+
+        text-align: right;
+    }
+    #content .text-heading {
+        text-align: right;
+    }
+    
+
+
+
+
+}
